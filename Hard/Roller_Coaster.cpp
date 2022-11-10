@@ -9,7 +9,7 @@ int main(){
 	int P[N];
     long long earnings = 0;
 	pair<int, int> peopleQue[N];
-	for(int i = 0; i < N; i++)  {
+	for(int i = 0; i < N; i++){
         cin >> P[i];
     }
 	for(int i = 0; i < N; i++){
@@ -27,6 +27,6 @@ int main(){
 	for(int i = 0; i < C; i++){
         earnings += peopleQue[now].first;
         now = peopleQue[now].second;
-    }
+	}
 	cout << earnings << endl;
 }
